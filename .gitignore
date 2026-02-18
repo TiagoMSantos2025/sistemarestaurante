@@ -34,7 +34,7 @@ temp/
 
 # Production builds
 backend/dist/
-frontend/build/
+# frontend/build/
 
 # OS generated files
 .DS_Store
