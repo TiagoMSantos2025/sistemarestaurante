@@ -101,3 +101,25 @@ Para executar ambos os servidores simultaneamente durante o desenvolvimento:
    ```
 
 O proxy configurado no frontend encaminhará as requisições para o backend em `http://localhost:5000`.
+
+## Deploy
+
+Para fazer deploy da aplicação:
+
+1. Instale todas as dependências:
+   ```bash
+   npm run install-all
+   ```
+
+2. Construa o frontend para produção:
+   ```bash
+   cd frontend
+   npm run build
+   ```
+
+3. Execute a aplicação completa:
+   ```bash
+   npm start
+   ```
+
+A aplicação está configurada para servir o frontend construído a partir do servidor backend quando `NODE_ENV` é definido como `production`.
